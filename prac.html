@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice html</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" type="image" href="pht.png"><!--like my image is saved in the proj folder i can use it as pht.png-->
+
+        <!-- Head content goes here, like title, meta tags, etc. -->
+    </head>
+    <body>
+        <h1 class="headingclr">Heading</h1>
+        <p>paragraph</p>
+        <u>underline</u>
+        <em>italic</em>
+        <strong>highlights</strong><div></div>
+        
+        <a href="https://www.youtube.com/">
+        <button class="youtube-button">youtube button</button>
+        </a>
+        <div>this is ordered list showinh num</div><!--//also known as containerrrr -->
+        <ol>
+            <li>first</li>
+            <li>sec</li>
+            <li>third</li>
+        </ol><!--this is orderd list-->
+        <div>this is unordered list not showinh num</div><!--use P would be better try css code heree-->
+        <ul>
+            <li>first</li>
+            <li>sec</li>
+            <li>third</li>
+
+        </ul><!--unordered list-->
+        <h2>
+            <em>
+                <u>
+                    <strong>
+                        This is nested element
+                    </strong>
+                </u>
+            </em>
+        </h2>
+        <a href="https://www.theodinproject.com/">
+            this is odens proj link 
+        </a><p></p>
+        <img src="https://th.bing.com/th?id=OIP.731dy08emdOSmne0XQVqzQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" 
+        alt="coffee"
+        width="180px"
+        >
+    </img>
+    <div class="blue-background">
+        <p>This text is in a div with a blue background.</p>
+        
+    </div>
+    <form action="submit.html">
+        <p>Enter name</p>
+        <input type="name">
+        <p>Email</p>
+        <input class="email" type="email">
+        <p>password</p>
+        <input type="password">
+        <p>checkbox</p>
+        <label for="c1">First</label>
+        <input type="checkbox" id="c1">
+        <label for="c2">second</label>
+        <input type="checkbox" id="c2">
+        <button class="buttonsb" type="submit">Submit</button>
+        <p>Radio</p>
+        <input type="radio">
+        <input type="radio">
+        <button type="submit">submit</button>
+        <p>select gender</p>
+        <select>
+            <option>Male</option>
+            <option >Female</option>
+        
+        </select>
+       
+
+    </form>
+    <style>
+        .youtube-button{
+            background-color: #FF0000; /* Red background color */
+            color: white; /* White text color */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Add some padding */
+            font-size: 16px; /* Increase font size */
+            cursor: pointer; /* Change cursor to pointer on hover change to handicon when moved on the youtube button*/
+            border-radius: 100px; /* Optional: rounded corners */
+        }
+        .headingclr{
+            color:blueviolet;
+        }
+        .buttonsb{
+            color: aqua;
+            height: 100px;
+            width: auto;
+        }
+        button:hover{
+            background-color: blueviolet;
+            transition: .3s ease all;
+            transform: translateY(-85px);
+        }
+        body{
+            background-color:darkgreen ;
+        }
+        @media screen and (max-width:992px){ 
+            body{
+                background-color: burlywood;
+
+        }}
+        @media screen and (max-width:700px){ 
+            body{
+                background-color: darkred;
+
+        }}
+        
+
+    </style> <!--use for css in a single code-->
+    <script>
+        
+       setTimeout(function(){
+        window.Location.href="https://www.youtube.com/"
+       },2000)
+    </script><!--use for javascipt in a single code-->
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <button type="submit">this is submitted</button>
+    </body>
+</html>
