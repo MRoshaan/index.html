@@ -1,0 +1,39 @@
+.blue-background {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+.email {
+    width: 250px;
+   
+
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;;/*uj*/
+    grid-template-rows: 20px 30px 20px;
+    grid-template-areas:
+     "header header header"
+     "main . main"
+     "footer footer footer"
+
+    ;
+
+}
+div{
+    background-color: greenyellow;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+.box{
+    background-color: slateblue;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+
+}
