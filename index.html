@@ -1,139 +1,354 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Practice html</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="icon" type="image" href="pht.png"><!--like my image is saved in the proj folder i can use it as pht.png-->
-
-        <!-- Head content goes here, like title, meta tags, etc. -->
-    </head>
-    <body>
-        <h1 class="headingclr">Heading</h1>
-        <p>paragraph</p>
-        <u>underline</u>
-        <em>italic</em>
-        <strong>highlights</strong><div></div>
-        
-        <a href="https://www.youtube.com/">
-        <button class="youtube-button">youtube button</button>
-        </a>
-        <div>this is ordered list showinh num</div><!--//also known as containerrrr -->
-        <ol>
-            <li>first</li>
-            <li>sec</li>
-            <li>third</li>
-        </ol><!--this is orderd list-->
-        <div>this is unordered list not showinh num</div><!--use P would be better try css code heree-->
-        <ul>
-            <li>first</li>
-            <li>sec</li>
-            <li>third</li>
-
-        </ul><!--unordered list-->
-        <h2>
-            <em>
-                <u>
-                    <strong>
-                        This is nested element
-                    </strong>
-                </u>
-            </em>
-        </h2>
-        <a href="https://www.theodinproject.com/">
-            this is odens proj link 
-        </a><p></p>
-        <img src="https://th.bing.com/th?id=OIP.731dy08emdOSmne0XQVqzQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" 
-        alt="coffee"
-        width="180px"
-        >
-    </img>
-    <div class="blue-background">
-        <p>This text is in a div with a blue background.</p>
-        
-    </div>
-    <form action="submit.html">
-        <p>Enter name</p>
-        <input type="name">
-        <p>Email</p>
-        <input class="email" type="email">
-        <p>password</p>
-        <input type="password">
-        <p>checkbox</p>
-        <label for="c1">First</label>
-        <input type="checkbox" id="c1">
-        <label for="c2">second</label>
-        <input type="checkbox" id="c2">
-        <button class="buttonsb" type="submit">Submit</button>
-        <p>Radio</p>
-        <input type="radio">
-        <input type="radio">
-        <button type="submit">submit</button>
-        <p>select gender</p>
-        <select>
-            <option>Male</option>
-            <option >Female</option>
-        
-        </select>
-       
-
-    </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
     <style>
-        .youtube-button{
-            background-color: #FF0000; /* Red background color */
-            color: white; /* White text color */
-            border: none; /* Remove default border */
-            padding: 10px 20px; /* Add some padding */
-            font-size: 16px; /* Increase font size */
-            cursor: pointer; /* Change cursor to pointer on hover change to handicon when moved on the youtube button*/
-            border-radius: 100px; /* Optional: rounded corners */
+        /* Global styles */
+        html, body {
+            height: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 0;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
         }
-        .headingclr{
-            color:blueviolet;
-        }
-        .buttonsb{
-            color: aqua;
-            height: 100px;
-            width: auto;
-        }
-        button:hover{
-            background-color: blueviolet;
-            transition: .3s ease all;
-            transform: translateY(-0px);
-        }
-        body{
-            background-color:darkgreen ;
-        }
-        @media screen and (max-width:992px){ 
-            body{
-                background-color: burlywood;
 
-        }}
-        @media screen and (max-width:700px){ 
-            body{
-                background-color: orchid;
+        /* Header styles */
+        .header {
+            display: flex;
+            background-color: #1f2937;
+            align-items: center;
+            justify-content: center;
+        }
 
-        }}
-        
+        .inside-header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 1000px;
+            padding: 20px;
+        }
 
-    </style> <!--use for css in a single code-->
-    <script>
-        
-       setTimeout(function(){
-        window.Location.href="https://www.youtube.com/"
-       },2000)
-    </script><!--use for javascipt in a single code-->
+        .logo {
+            color: #f9faf8;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        ul {
+            display: flex;
+            gap: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: #3882f6;
+            transition: color 0.3s;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        /* Box1 styles */
+        .box1 {
+            display: flex;
+            background-color: #1f2937;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inside-box1 {
+            display: flex;
+            gap: 35px;
+            width: 1000px;
+            height: 200px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .title {
+            color: #f9faf8;
+            font-size: 48px;
+            font-weight: 900;
+            text-align: left;
+            margin: 0;
+        }
+
+        .text-title {
+            color: #e5e7eb;
+            font-size: 18px;
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .button-one {
+            background-color: #3882f6;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 120px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 2s;
+            text-align: left;
+        }
+
+        .button-one:hover {
+            background-color: #085858;
+        }
+
+        .image-placeholder img {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            color: #e5e7eb;
+            background-color: #7a7d83;
+            width: 500px;
+            height: 200px;
+        }
+
+        /* Box2 styles */
+        .box2 {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            min-height: 400px;
+            flex-direction: column;
+        }
+
+        .header2 {
+            font-size: 36px;
+            color: #1f2937;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .box-container {
+            display: flex;
+            flex:1;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        .small-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .smallimg img {
+            border: 5px solid #3882f6;
+            border-radius: 10px;
+            width: 150px;
+            height: 175px;
+        }
+
+        .text {
+            font-size: 16px;
+            color: #1f2937;
+            margin-top: 10px;
+        }
+
+        /* Box3 styles */
+        .box3-cont {
+            margin: 0;
+            padding: 20px;
+            min-height: 300px;
+            background-color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3 {
+            width: 800px;
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 100;
+            color: #1f2937;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        /* Box4 styles */
+        .box4 {
+            width: 1000px;
+            background-color: #3882f6;
+            border-radius: 6px;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            color: #f9faf8;
+        }
+
+        .inside-box4 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .text-inside-box4 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .bold {
+            font-size: 20px;
+            font-weight: 900;
+            color: #f9faf8;
+        }
+
+        .not-bold {
+            font-size: 16px;
+            color: #f9faf8;
+        }
+
+        .button-2 {
+            background-color: #3882f6;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 150px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 2s;
+            border: 1px solid white;
+        }
+
+        .button-2:hover {
+            background-color: #085858;
+        }
+
+        /* Footer styles */
+        .footer {
+            display: flex;
+            color: #f9faf8;
+            background-color: #1f2937;
+            justify-content: center;
+            padding: 20px;
+            font-size: 16px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="inside-header">
+            <a href="#" class="logo">T-Shirts And Styles</a>
+            <ul>
+                <li><a href="#">Baggy T-Shirt</a></li>
+                <li><a href="#">Fashioned Trousers</a></li>
+                <li><a href="#">Styled T-Shirts</a></li>
+                <li><a href="#">Styled Jeans</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="header">Header</div>
-        <div class="main">Main Content</div>
-        <div class="footer">Footer</div>
+        <div class="box1">
+            <div class="inside-box1">
+                <div class="title-box">
+                    <div class="title">This Website Is For Clothing</div>
+                    <div class="text-title">
+                        Embrace effortless style with our latest collection, featuring relaxed baggy T-shirts, versatile trousers, and classic jeans. Whether you're going for a laid-back weekend look or cool, casual vibes.
+                    </div>
+                    <button class="button-one">Purchase</button>
+                </div>
+                <div class="image-placeholder">
+                    <img src="Titleph.jpeg" alt="Sample picture">
+                </div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="header2">Here Are Some Samples</div>
+            <div class="box-container">
+                <div class="small-images">
+                    <div class="smallimg">
+                        <img src="baggytt.jpeg" alt="Baggy T-shirts">
+                    </div>
+                    <div class="text">Baggy T-shirts where comfort meets effortless style</div>
+                </div>
+                <div class="small-images">
+                    <div class="smallimg">
+                        <img src="fash.jpeg" alt="Fashioned Trousers">
+                    </div>
+                    <div class="text">Where classic design meets modern sophistication</div>
+                </div>
+                <div class="small-images">
+                    <div class="smallimg">
+                        <img src="StyledT.jpeg" alt="Styled T-Shirts">
+                    </div>
+                    <div class="text">Where timeless style meets contemporary edge</div>
+                </div>
+                <div class="small-images">
+                    <div class="smallimg">
+                        <img src="baggyj.jpeg" alt="Styled Jeans">
+                    </div>
+                    <div class="text">Where laid-back comfort meets effortless cool</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box3-cont">
+            <div class="box3">
+                <div class="quote">
+                    “Style is effortless when comfort leads the way. Discover our collection of laid-back pants, stylish shirts, and more—where modern fashion meets ultimate ease.”
+                </div>
+                <div class="name">Sir Jonathan The Weakest</div>
+            </div>
+        </div>
+
+        <div class="box4">
+            <div class="inside-box4">
+                <div class="text-inside-box4">
+                    <div class="bold">It's Time To Purchase!</div>
+                    <div class="not-bold">Start purchasing by clicking the button right over there!</div>
+                </div>
+                <button class="button-2">Purchase now</button>
+            </div>
+        </div>
     </div>
-    <div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-    <button type="submit">this is submitted</button>
-    </body>
+
+    <div class="footer">Project Created By Roshaan. © 2024</div>
+</body>
 </html>
